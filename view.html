@@ -1,309 +1,248 @@
 <html>
-    <head>
-        <meta name="viewport" content="with-device-width, initial-scale=1.0">
 
-        <title>view_page</title>
-             <!--icon of website(logo)-->
-             <link rel="shortcut icon" type="image" href="img/logo1.png">    
-             <!-- <link rel="stylesheet" href="style.css"> -->
-        <!-- <link rel="stylesheet" href="style.css"> -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
-        
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500&display=swap" rel="stylesheet">
+<head>
+  <meta name="viewport" content="with-device-width, initial-scale=1.0">
 
-<!-- Bootstrap link css -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>view_page</title>
+  <!--icon of website(logo)-->
+  <link rel="shortcut icon" type="image" href="img/logo1.png">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
 
-<!-- bootstap4 js link -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500&display=swap" rel="stylesheet">
 
-<!-- Font Awsome Link -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Bootstrap link css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- bootstap4 js link -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  <!-- Font Awsome Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-    
-     
-<header>
-        <div class="bg-dark collapse" id="navbarHeader">
 
+
+<header>
+  <div class="bg-dark collapse" id="navbarHeader">
+
+  </div>
+  <div class="navbar  navbar-dark bg-dark box-shadow"> <!--navbar-dark bg-dark -->
+    <div class="container d-flex justify-content-between">
+      <a href="index.html" class="navbar-brand d-flex align-items-center">
+
+        <img src="img/logo1.png" alt="brand-logo" width="70" height="70">
+        <strong class="text-danger ">&nbsp; Fitness-<strong class="text-light">Hub </strong> </strong>
+      </a>
+      <button class="bg-dark border-0"><a href="index.html"><i class="fa-solid fa-home text-danger"
+            class=""></i></a></button>
+
+    </div>
+  </div>
+</header>
+<style>
+   * {
+      scroll-behavior: smooth;
+    }
+
+    ::-webkit-scrollbar {
+      height: 0;
+      width: .5rem;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: rgb(3, 3, 3);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: rgb(162, 35, 35);
+      border-radius: 5px;
+    }
+  body,    
+  html {
+    background-attachment: fixed;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 12, 0.7)), url(img/tricep.jpg);
+    background-position: center;
+    background-size: cover;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+    background-repeat: no-repeat;
+    height: auto;
+  }
+</style>
+
+<body>
+  <br>
+  <h1 class="pl" style="text-align: center; color: rgb(202, 63, 63);"> Gallery
+    <hr class="bg-danger">
+  </h1>
+  <div class="container py-5 ">
+  
+    <div class="row no-gutters shadow mb-4">
+      <div class="col-md-6">
+        <div class="focuspoint " data-aspect-ratio="3:1" data-aspect-ratio-sm="3:2" data-focus-x="-0.42"
+          data-focus-y="-0.14" data-image-w="1125" data-image-h="750">
+          <img src="img/view1.jpg" class="w-100" style="border-radius: 10px;">
         </div>
-        <div class="navbar  navbar-dark bg-dark box-shadow">  <!--navbar-dark bg-dark -->
-          <div class="container d-flex justify-content-between">
-            <a href="#" class="navbar-brand d-flex align-items-center">
-             
-              <img src="img/logo1.png" alt="brand-logo" width="70" height="70">
-              <strong class="text-danger ">&nbsp; Fitness-<strong class="text-light">Hub </strong> </strong>
-            </a>
-            <button class="bg-dark border-0"><a href="index.html"><i class="fa-solid fa-home text-danger" class=""></i></a></button>
-           
+      </div>
+      <div class="col-md-6 text-white px-4 py-4 py-md-2 d-flex align-items-center">
+        <div>
+          <h4 class=" mt-0 mb-0 text-center" style="color: #a52a2a ;">
+            PG-1
+          </h4>
+          <hr class="mt-0 bg-danger">
+          <h4>
+            <p1 class="text-danger" style="text-align: justify;">in home page you cane see interface and you can also
+              login/signup and other pages</p>
+          </h4>
+        </div>
+      </div>
+    </div>
+    <div class="row no-gutters shadow mb-4">
+      <div class="col-md-6">
+        <div class="focuspoint " data-aspect-ratio="3:1" data-aspect-ratio-sm="3:2" data-focus-x="-0.42"
+          data-focus-y="-0.14" data-image-w="1125" data-image-h="750">
+          <img src="img/view2.png" class="w-100" style="border-radius: 10px;">
+        </div>
+      </div>
+      <div class="col-md-6 text-white px-4 py-4 py-md-2 d-flex align-items-center">
+        <div>
+          <h4 class=" mt-0 mb-0 text-center" style="color:#a52a2a ;">
+            PG-2
+          </h4>
+          <hr class="mt-0 bg-danger">
+          <h4>
+            <p class="text-danger" style="text-align:justify;">this is about pager of fitness hub here u can see bout
+              informtion and also can gave
+              feedback to us.</p>
+          </h4>
+        </div>
+      </div>
+    </div>
+    <div class="row no-gutters shadow mb-4">
+      <div class="col-md-6">
+        <div class="focuspoint " data-aspect-ratio="3:1" data-aspect-ratio-sm="3:2" data-focus-x="-0.42"
+          data-focus-y="-0.14" data-image-w="1125" data-image-h="750">
+          <img src="img/view7.png" class="w-100 " style="border-radius: 10px;">
+        </div>
+      </div>
+      <div class="col-md-6 text-white px-4 py-4 py-md-2 d-flex align-items-center">
+        <div>
+          <h4 class=" mt-0 mb-0 text-center" style="color:#a52a2a ;">
+            PG-3
+          </h4>
+          <hr class="mt-0 bg-danger">
+          <h4>
+            <p class="text-danger" style="text-align: justify;">this is sighup page of fitness hub user need to make
+              their accounnt before starting
+              exercise </p>
+          </h4>
+        </div>
+      </div>
+    </div>
+    <div class="row no-gutters shadow mb-4">
+      <div class="col-md-6">
+        <div class="focuspoint " data-aspect-ratio="3:1" data-aspect-ratio-sm="3:2" data-focus-x="-0.42"
+          data-focus-y="-0.14" data-image-w="1125" data-image-h="750">
+          <img src=" img/view4.png" class="w-100" style="border-radius: 10px;">
+        </div>
+      </div>
+      <div class="col-md-6 text-white px-4 py-4 py-md-2 d-flex align-items-center">
+        <div>
+          <h4 class=" mt-0 mb-0 text-center" style="color:#a52a2a ;">
+            PG-4
+          </h4>
+          <hr class="mt-0 bg-danger">
+          <h4>
+            <p class="text-danger" style="text-align: justify;">this is before after pic of user of fitness hub who
+              lose/gain their weight and make
+              body in shape </p>
+          </h4>
+        </div>
+      </div>
+    </div>
+    <div class="row no-gutters shadow mb-4">
+      <div class="col-md-6">
+        <div class="focuspoint " data-aspect-ratio="3:1" data-aspect-ratio-sm="3:2" data-focus-x="-0.42"
+          data-focus-y="-0.14" data-image-w="1125" data-image-h="750">
+          <img src="img/view8.png" class="w-100 " style="border-radius: 10px;">
+        </div>
+      </div>
+      <div class="col-md-6 text-white px-4 py-4 py-md-2 d-flex align-items-center">
+        <div>
+          <h4 class=" mt-0 mb-0 text-center" style="color: #a52a2a ;">
+            PG-5
+          </h4>
+          <hr class="mt-0 bg-danger">
+          <h4>
+            <p class="text-danger" style="text-align: justify;">this is workout page here each body part have 6 diffrent
+              exercise</p>
+          </h4>
+        </div>
+      </div>
+    </div>
+    <div class="row no-gutters shadow mb-4">
+      <div class="col-md-6">
+        <div class="focuspoint " data-aspect-ratio="3:1" data-aspect-ratio-sm="3:2" data-focus-x="-0.42"
+          data-focus-y="-0.14" data-image-w="1125" data-image-h="750">
+          <img src="img/view6.png" class="w-100 " style="border-radius: 10px;">
+        </div>
+      </div>
+      <div class="col-md-6 text-white px-4 py-4 py-md-2 d-flex align-items-center">
+        <div>
+          <h4 class=" mt-0 mb-0 text-center" style="color:#a52a2a ;">
+            PG-3
+          </h4>
+          <hr class="mt-0 bg-danger">
+          <h4>
+            <p class="text-danger" style="text-align: justify;">this is signin page of fitness hub here you can signin
+              after make account. </p>
+          </h4>
+        </div>
+      </div>
+    </div>
+
+    <footer style="padding-bottom:px;">
+      <div class="container">
+        <div class="row" style="justify-content: center;">
+          <div class="col-md-6 item text-center mt-5">
+            <img src="img/logo1.png" alt="brand-logo" width="70" height="70">
+            <h3><strong class="text-danger ">&nbsp; Fitness-<strong class="text-light">Hub </strong> </strong></h3>
+            <hr class=" text-mute bg-light ">
+            <p class="mb-1 "><i class="fa-solid fa-phone text-danger"></i>
+              <b class="text-light">84888 &nbsp; 33890</b>
+            </p>
+            <p class="mb-1">
+              <i class="fa-solid fa-envelope text-danger"></i>
+              <b class="text-light">FitnessHub@gamil.com</b>
+            </p>
+            <p class="mb-1">
+              <i class="fa-solid fa-location-dot text-danger"></i>
+              <b class="text-light"> Ahmedabad , 383001
+                <br> <b> Sarkhej-Tp85 Road </b>
+              </b>
+            </p>
           </div>
         </div>
-      </header>
-      <style>
-      body, html {
-    min-height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/matt1.jpg);
-    background-position: center;
-    background-size: cover; 
-    position: relative;}
-</style>
-       <body>
-        <!--==================================HR View Section Start=====================================-->
-      <br>
-<h1 class="pl-5 text-white" > gallery
-<hr class="bg-danger">
-</h1>
-
-<div class="container py-5 ">
-  
-  
-    <h4 class="mb-0" style="color: #1f9f9f ;"></h4>   
-   
-      
-  <div class="row no-gutters shadow mb-4">
-    <div class="col-md-6">
-      <div class="focuspoint " 
-      data-aspect-ratio="3:1" data-aspect-ratio-sm="3:2" data-focus-x="-0.42"
-       data-focus-y="-0.14" data-image-w="1125" data-image-h="750">
-        <img src="img/view1.jpg" class="w-100" >
-    </div>
-    </div>
-    <div class="col-md-6 text-white px-4 py-4 py-md-2 d-flex align-items-center">
-      <div>
-
-        <h4 class=" mt-0 mb-0 text-center" style="color: #a52a2a ;">
-          PG-1 
-      </h4>
-      <hr class="mt-0 bg-danger">
-      <h4>   <p class="text-danger">in home page you cane see interface and you can also login/signup and other pages</p></h4>
       </div>
-    </div>
-  </div>
-    
-  <div class="row no-gutters shadow mb-4">
-    <div class="col-md-6">
-      <div class="focuspoint " 
-      data-aspect-ratio="3:1" data-aspect-ratio-sm="3:2" data-focus-x="-0.42"
-       data-focus-y="-0.14" data-image-w="1125" data-image-h="750">
-        <img src="img/view2.png" class="w-100">
-    </div>
-    </div>
-    <div class="col-md-6 text-white px-4 py-4 py-md-2 d-flex align-items-center">
-      <div>
-        <h4 class=" mt-0 mb-0 text-center" style="color:#a52a2a ;">
-           PG-2  
-      </h4>
-      <hr class="mt-0 bg-danger">
-      <h4>   <p class="text-danger">this is about pager of fitness hub here u can see bout informtion and also can gave feedback to us.</p></h4>
+      <div class="container-fluid  text-center ">
+        <p class=" copyright text-light ">2023 © Fitness-hub</p>
       </div>
-    </div>
-  </div>
+    </footer>
 
-  <div class="row no-gutters shadow mb-4">
-    <div class="col-md-6">
-      <div class="focuspoint " 
-      data-aspect-ratio="3:1" data-aspect-ratio-sm="3:2" data-focus-x="-0.42"
-       data-focus-y="-0.14" data-image-w="1125" data-image-h="750">
-        <img src="img/view7.png" class="w-100 ">
-    </div>
-    </div>
-    <div class="col-md-6 text-white px-4 py-4 py-md-2 d-flex align-items-center">
-      <div>
-        <h4 class=" mt-0 mb-0 text-center" style="color:#a52a2a ;">
-           PG-3 
-      </h4>
-      <hr class="mt-0 bg-danger">
-      <h4>   <p class="text-danger">this is sighup page of fitness hub user need to make their accounnt before starting exercise </p></h4>
-      </div>
-    </div>
-  </div>
+</body>
 
-  <div class="row no-gutters shadow mb-4">
-    <div class="col-md-6">
-      <div class="focuspoint " 
-      data-aspect-ratio="3:1" data-aspect-ratio-sm="3:2" data-focus-x="-0.42"
-       data-focus-y="-0.14" data-image-w="1125" data-image-h="750">
-        <img src= " img/view4.png" class="w-100">
-    </div>
-    </div>
-    <div class="col-md-6 text-white px-4 py-4 py-md-2 d-flex align-items-center">
-      <div>
-        <h4 class=" mt-0 mb-0 text-center" style="color:#a52a2a ;">
-           PG-4 
-      </h4>
-      <hr class="mt-0 bg-danger">
-      <h4>   <p class="text-danger">this is before after pic of user of fitness hub who lose/gain their weight and make body in shape  </p></h4>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="row no-gutters shadow mb-4">
-    <div class="col-md-6">
-      <div class="focuspoint " 
-      data-aspect-ratio="3:1" data-aspect-ratio-sm="3:2" data-focus-x="-0.42"
-       data-focus-y="-0.14" data-image-w="1125" data-image-h="750">
-        <img src="img/view8.png" class="w-100 ">
-    </div>
-    </div>
-    <div class="col-md-6 text-white px-4 py-4 py-md-2 d-flex align-items-center">
-      <div>
-        <h4 class=" mt-0 mb-0 text-center" style="color: #a52a2a ;">
-           PG-5 
-      </h4>
-      <hr class="mt-0 bg-danger">
-      <h4>   <p class="text-danger">this is workout page here each body part have 6 diffrent exercise</p></h4>
-      </div>
-    </div>
-  </div>
-
-  <div class="row no-gutters shadow mb-4">
-    <div class="col-md-6">
-      <div class="focuspoint " 
-      data-aspect-ratio="3:1" data-aspect-ratio-sm="3:2" data-focus-x="-0.42"
-       data-focus-y="-0.14" data-image-w="1125" data-image-h="750">
-        <img src="img/view6.png" class="w-100 ">
-    </div>
-    </div>
-    <div class="col-md-6 text-white px-4 py-4 py-md-2 d-flex align-items-center">
-      <div>
-        <h4 class=" mt-0 mb-0 text-center" style="color:#a52a2a ;">
-           PG-3 
-      </h4>
-      <hr class="mt-0 bg-danger">
-      <h4>   <p class="text-danger">this is signin page of fitness hub here you can signin after make account.  </p></h4>
-      </div>
-    </div>
-  </div>
-      </div>
-  <div class="container-fluid bg-dark ">
-  <footer>
-          <section>
-            <div class="container ">
-          
-
-                <div class="row">
-
-                    <div class="col-sm-6 col-md-3 item text-center">
-                      
-              </div>
-         
-
-            
-<!----------------Address section------------------------>
-              <div class="col item social">
-              </div>  
-              <div class="col-md-6 item text-center mt-2 ">
-              <img src="img/logo1.png" alt="brand-logo" width="70" height="70">
-                <h3><strong class="text-danger ">&nbsp; Fitness-<strong class="text-light">Hub </strong> </strong></h3> 
-                
-              
-            
-   <hr class=" text-mute bg-light ">     
-                <!-- <hr class="container bg-white"> -->
-                <p class="mb-1 "><i class="fa-solid fa-phone text-danger"></i>
-                  <b class="text-light">434-392-9617</b>.</p>
-                <p class="mb-1">
-                <i class="fa-solid fa-envelope text-danger"></i>
-                  <b  class="text-light">fitnessHubR@gamil.com</b>.</p>
-                <p class="mb-1">
-                <i class="fa-solid fa-location-dot text-danger"></i>
-                  <b  class="text-light"> 465 Al asmakh St. 
-                
-                   <br> &nbsp;&nbsp;&nbsp; doha, qatar </b>.</p>
-        
-              
-              </div>
-               
-            </div>
-<!----------------Address section------------------------>
-<!----------------Copy Rights section------------------------>
-
-<div class="container-fluid  text-center ">
-            <p class=" copyright text-light "style="">2022 © Fitness-hub</p></div>
-          </div><br>
-        
-<!----------------Copy Rights section------------------------>
-
-               </section>
-        </footer>        
-<!--==================================HR View Section End=====================================-->
-
-<!--==================================Employee View Section Start=====================================-->
-
-  <!-- <h4 class="mb-0 text-right" style="color: white;">
-     Employee pages</h4>   
-  <hr class="mt-0 bg-info">  
-  <div class="row no-gutters shadow mb-4">
-    <div class="col-md-6 order-md-2">
-      <div class="focuspoint" data-aspect-ratio="3:1" data-aspect-ratio-sm="3:2" data-focus-x="-0.42" data-focus-y="-0.14" data-image-w="1125" data-image-h="750">
-        <img src="imgs/view/emp_mstr.jpeg" class="shadow ">
-    </div>
-    </div>
-    <div class="col-md-6  px-4 py-4 py-md-2 d-flex align-items-center">
-      <div>
-        <h4 class=" mt-0 mb-0 text-center" style="color: #1f9f9f ;">
-           PG-1 
-      </h4>
-      <hr class="mt-0 bg-info">
-      <p class="text-white">Employees Have To Fill Details On This Page.</p>
-      </div>
-    </div>
-
-    
-  </div>
-  
-  
-  <div class="row no-gutters shadow mb-4">
-    <div class="col-md-6 order-md-2">
-      <div class="focuspoint" data-aspect-ratio="3:1" data-aspect-ratio-sm="3:2" data-focus-x="-0.42" data-focus-y="-0.14" data-image-w="1125" data-image-h="750">
-        <img src="imgs/view/emp_lv.jpeg" class="shadow ">
-    </div>
-    </div>
-    <div class="col-md-6  px-4 py-4 py-md-2 d-flex align-items-center">
-      <div>
-        <h4 class=" mt-0 mb-0 text-center" style="color: #1f9f9f ;">
-           PG-2
-      </h4>
-      <hr class="mt-0 bg-info">
-      <p class="text-white">At Any Chance Employee Wants A Leave They Cloud  
-        Write Their Resoan On This Page , Progress See on Status Panel .</p>
-      </div>
-    </div>
-
-    
-  </div> 
-
-
-  
-  <div class="row no-gutters shadow mb-4">
-    <div class="col-md-6 order-md-2">
-      <div class="focuspoint" data-aspect-ratio="3:1" data-aspect-ratio-sm="3:2" data-focus-x="-0.42" data-focus-y="-0.14" data-image-w="1125" data-image-h="750">
-        <img src="imgs/view/emp_ac.jpeg" class="shadow ">
-    </div>
-    </div>
-    <div class="col-md-6  px-4 py-4 py-md-2 d-flex align-items-center">
-      <div>
-        <h4 class=" mt-0 mb-0 text-center" style="color: #1f9f9f ;">
-           PG-3
-      </h4>
-      <hr class="mt-0 bg-info">
-      <p class="text-white">If HR Gave Any Type Of Annoucment So, Employee Can See On This PAge.</p>
-      </div>
-    </div>
-
-    
-  </div> 
-==================================Employee View Section End===================================== -->
-
-       </body> 
-
-         
-        
-          
-    
-        </html>
+</html>
