@@ -1,887 +1,415 @@
-<html>
-    <head>
-        <meta name="viewport" content="with-device-width, initial-scale=1.0">
-    <!-- Font Awsome Link -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!DOCTYPE html>
+<html lang="en">
 
-        <title>workout page</title>
-             <!--icon of website(logo)-->
-             <link rel="shortcut icon" type="image" href="img/logo1.png">    
-             <!-- <link rel="stylesheet" href="style.css"> -->
-        <!-- <link rel="stylesheet" href="style.css"> -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
-        
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500&display=swap" rel="stylesheet">
-   <!--Font Awosome Icons-->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-   <!--<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workout Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+  <link rel="shortcut icon" type="image" href="img/logo1.png">
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <style>
+    * {
+      scroll-behavior: smooth;
+    }
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    ::-webkit-scrollbar {
+      height: 0;
+      width: .5rem;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: rgb(3, 3, 3);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: rgb(162, 35, 35);
+      border-radius: 5px;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    }
+
+    .header {
+      min-height: 100vh;
+      width: 100%;
+      background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(img/index.jpg);
+      background-position: center;
+      background-size: cover;
+      position: relative;
+    }
+
+    .back-to-top {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background-color: #28282B;
+      border: none;
+      scroll-behavior: smooth;
+    }
 
 
-<!-- Bootstrap link css -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    .responsive-video {
+      max-width: 100%;
+      height: auto;
+    }
 
-<!-- bootstap4 js link -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    .custom_bg {
+      background-attachment: fixed;
+      background-image: linear-gradient(rgba(4, 9, 4, 0.7), rgba(9, 3, 0.7)),
+        url('/fitness/img/index.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: auto;
+      background-attachment: fixed;
+    }
+  </style>
 </head>
-    <body>
-        <style>
-            *{
-              scroll-behavior: smooth;
-            }
-            ::-webkit-scrollbar{
-    height: 0;
-    width: .5rem;
-}
-::-webkit-scrollbar-track{
-    background: rgb(3, 3, 3);
-}
-::-webkit-scrollbar-thumb{
-    background: rgb(162, 35, 35);
-    border-radius: 5px;
-}
 
-                .header{
-    min-height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/index.jpg );
-    background-position: center;
-    background-size: cover; 
-    position: relative;
-}
-.back-to-top {
-    position: fixed;
+<body>
+  <header>
+    <div class="" id="navbarHeader">
 
-    bottom: 25px;
-    right: 25px;
-    /* display: none; */
-    background-color:#28282B;
-    border:none ;
-    scroll-behavior: smooth;
-} 
-            
-.jumbotron{
-    min-height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/index.jpg);
-    background-position: center;
-    background-size: cover; 
-    position: relative;
-    
-}    
-            
-            
-            </style>
-        <!-- <header>
-            <img class="logo" src="img/logo1.png"  alt="logo"  >
-           
-               
-                   <nav class="navbar">
-                        <a href="index.html">home</a>
-                        <a href="yoga.html">yoga</a>  
-                     
-                       <a href="about.html">about</a>
-                       <a href="login.html">login</a>
-                   </nav>
-       
-               
-           </header> -->
-        
-           <header>
-            <div class="bg-dark collapse" id="navbarHeader">
+    </div>
+    <div class="navbar navbar-dark bg-dark box-shadow">
+      <div class="container d-flex justify-content-between">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+          <img src="img/logo1.png" alt="brand-logo" width="70" height="70">
+          <strong class="text-danger">&nbsp; Fitness-<strong class="text-light">Hub </strong></strong>
+        </a>
+        <button class="bg-dark border-0"> <a href="index.html"> <strong class="text-danger"> Logout </strong><i
+              class="fa-solid fa-right-from-bracket text-danger"></i></a></button>
+      </div>
+    </div>
+  </header>
 
+
+  <div class="custom_bg">
+    <section class="text-center text-white rounded-0 mb-0 p-5">
+      <strong class="text-danger h2 "style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);">&nbsp; Fitness-<strong class="text-light">Hub </strong> </strong><br><br>
+      <strong class="h3" style="color: rgba(255, 255, 255, 0.699); text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);"> The
+        only person you are destined to
+        <br>become is the person you decide to be. <br><strong> Ralph Waldo Emerson</strong> <br></strong>
+      <br><br>
+      <div class="header-button mt-2" style="font-weight: bold;"></div>
+    </section>
+
+    <div class="container">
+      <div class="row">
+        <!-- Add your workout sections here -->
+        <!-- Example Biceps Workout Section -->
+        <div class="col-md-12">
+          <strong class="text-danger h2 text-center">Biceps WorkOut</strong>
+          <section id="viewbiceps"></section>
+          <hr class="bg-danger">
+        </div>
+        <div class="col-md-4">
+          <!-- Video 1: Barbell Curls -->
+          <div class="card mb-4 box-shadow" style="background-color:#181818ac; box-shadow: 5px 10px 8px #000000;">
+            <div class="embed-responsive embed-responsive-16by9">
+              <video class="embed-responsive-item responsive-video" controls>
+                <source src="videos/by1.html" type="video/mp4">
+              </video>
             </div>
-            <div class="navbar  navbar-dark bg-dark box-shadow">  <!--navbar-dark bg-dark -->
-              <div class="container d-flex justify-content-between">
-                <a href="#" class="navbar-brand d-flex align-items-center">
-                 
-                  <img src="img/logo1.png" alt="brand-logo" width="70" height="70">
-                  <strong class="text-danger ">&nbsp; Fitness-<strong class="text-light">Hub </strong> </strong>
-                </a>
-          
-    <button class="bg-dark border-0"> <a href="index.html">      <strong class="text-danger  "> logout </strong><i class=" fa-solid fa-right-from-bracket  text-danger " class=" "></i></a></button>
-               
-              </div>
+            <div class="card-body">
+              <p class="card-text text-center text-danger h4">Barbell Curls</p>
             </div>
-           
-          </header>
-      
-        <!-- <section class="header">
-      
-                </section>
-
-                --><section class="jumbotron text-center text-white rounded-0 mb-0"> 
-          <div class="container mt-5 ">
-            <strong class="text-danger h2 ">&nbsp; Fitness-<strong class="text-light">Hub </strong> </strong><br><br>
-           <strong class="h3 " style="color: rgba(255, 255, 255, 0.699);"> ¨The only person you are destined to <br>become is the person you decide to be.¨ <br><strong> – Ralph Waldo Emerson</strong> <br></strong>
-           <br><br>
-           <div class="  header-button mt-2" style="font-weight: bold;" >
-         
-      </div>			
           </div>
-        </section>  
+        </div>
+        <div class="col-md-4">
+          <!-- Video 2: Hammer Curls -->
+          <div class="card mb-4 box-shadow" style="background-color:#181818ac; box-shadow: 5px 10px 8px #000000;">
+            <div class="embed-responsive embed-responsive-16by9">
+              <video class="embed-responsive-item responsive-video" controls>
+                <source src="videos/by2.html" type="video/mp4">
+              </video>
             </div>
-        </section>
-<style>
- 
-</style>
-        <div class="album py-5 bg-dark">
-            <div class="container ">
+            <div class="card-body">
+              <p class="card-text text-center text-danger h4">Hammer Curls</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <!-- Video 3: Concentration Curls -->
+          <div class="card mb-4 box-shadow" style="background-color:#181818ac; box-shadow: 5px 10px 8px #000000;">
+            <div class="embed-responsive embed-responsive-16by9">
+              <video class="embed-responsive-item responsive-video" controls>
+                <source src="videos/by3.html" type="video/mp4">
+              </video>
+            </div>
+            <div class="card-body">
+              <p class="card-text text-center text-danger h4">Concentration Curls</p>
+            </div>
+          </div>
+        </div>
 
-
-    
-            <div class="row">
-                <div class="col-md-4">
-                  <div class="card mb-4 box-shadow " style="background-color:#181818ac;">
-                    <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="img/byshape.jpg" data-holder-rendered="true">
-                      <div class="card-body">
-                        <p class="card-text text-center text-danger  h4"> Biceps</p>
-                         <div class="d-flex justify-content-between align-items-center">
-                          <div class="btn-group">
-                        
-                        </div>
-                        <ul style="list-style: none;"  >
-                       <li  > <a href="#view" class="text-white h5" style="text-decoration:none; ">view</a></li>
-                      </ul>
-                      </div>
-                    </div>
-                  </div>
-                  
-                </div>
-                <div class="col-md-4">
-                  <div class="card mb-4 box-shadow" style="background-color:#181818ac;">
-                    <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="img/tricep.jpg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
-                    <div class="card-body">
-                      <p class="card-text text-center text-danger h4">triceps</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                         
-                        </div>
-                        <ul>
-                          <li> <a href="#viewtriceps"  class="text-white h5" style="text-decoration:none; ">view</a></li>
-                         </ul>     
-                       </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card mb-4 box-shadow" style="background-color:#181818ac;">
-                    <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="img/chest.jpg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
-                    <div class="card-body">
-                      <p class="card-text text-center text-danger h4">chest</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                        
-                        </div>
-                        <ul>
-                          <li> <a href="#viewchest"  class="text-white h5" style="text-decoration:none; ">view</a></li>
-                         </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-    
-                <div class="col-md-4">
-                  <div class="card mb-4 box-shadow" style="background-color:#181818ac;">
-                    <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="img/legs.jpg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
-                    <div class="card-body">
-                      <p class="card-text text-center text-danger h4" >legs</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                        
-                        </div>
-                        <ul>
-                          <li> <a href="#viewlegs "  class="text-white h5" style="text-decoration:none; ">view</a></li>
-                         </ul>
-                       </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card mb-4 box-shadow" style="background-color:#181818ac;">
-                    <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="img/shoulder.jpg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
-                    <div class="card-body">
-                      <p class="card-text text-center text-danger h4">shoulder</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                        
-                        </div>
-                        <ul>
-                          <li> <a href="#viewshoulder"  class="text-white h5" style="text-decoration:none; ">view</a></li>
-                         </ul>
-                       </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card mb-4 box-shadow" style="background-color:#181818ac;">
-                    <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="img/abs.jpg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
-                    <div class="card-body">
-                      <p class="card-text text-center text-danger h4">abs</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                         
-                        </div>
-                        <ul>
-                          <li> <a href="#viewabs"  class="text-white h5" style="text-decoration:none; ">view</a></li>
-                         </ul>                </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col text-white text-right mt-2">
-                
-                </div>
-               
-               <div class="contianer">
-                <br>
-                <br>
-                <br>
-                
-                <strong class="text-danger h2">        biceps</strong>
-                <section id="view"></section>
-                <hr class="bg-danger">
-                <div class="row">
-                  <div class="col-md-4">
-                    <div class="card mb-4 box-shadow" style="background-color:#181818ac;">
-                      <video controls >
-                        <source src="videos/by1.html" type="video/mp4">
-                       </video>
-                        <div class="card-body">
-                          <p class="card-text text-center text-danger  h4">barbell curls</p>
-                           <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                           
-                          </div>
-                         
-                        </div>
-                      </div>  text-danger
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="card mb-4 box-shadow" style="background-color:#181818ac;">
-                      <video controls >
-                        <source src="videos/by2.html" type="video/mp4">
-                       </video>
-                      <div class="card-body">
-                        <p class="card-text-center  text-danger h4"> hammer curls</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                          <div class="btn-group">
-                           
-                          </div>
-                                                </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="card mb-4 box-shadow" style="background-color:#181818ac;">
-                      <video controls >
-                        <source src="videos/by3.html" type="video/mp4">
-                       </video>
-                      <div class="card-body">
-                        <p class="card-text-center  text-danger h4">concentration curls</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                          <div class="btn-group">
-                          
-                          </div>
-                                              </div>
-                      </div>
-                    </div>
-                  </div>
-      
-               </div>
-               <div class="row">
-                <div class="col-md-4">
-                  <div class="card mb-4 box-shadow" style="background-color:#181818ac;">
-                    <video controls >
-                      <source src="videos/by4.html" type="video/mp4">
-                     </video>
-                      <div class="card-body">
-                        <p class="card-text text-center  text-danger  h4">reverce curls</p>
-                         <div class="d-flex justify-content-between align-items-center">
-                          <div class="btn-group">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card mb-4 box-shadow" style="background-color:#181818ac;">
-                    <video controls >
-                      <source src="videos/by5.html" type="video/mp4">
-                     </video>
-                    <div class="card-body">
-                      <p class="card-text-center  text-danger h4 ">5.dumbell biceps curl(hammer grip on bench)</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                         
-                        </div>
-                                              </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card mb-4 box-shadow" style="background-color:#181818ac;">
-                    <video controls >
-                      <source src="videos/by6.html" type="video/mp4">
-                     </video>
-                    <div class="card-body">
-                      <p class="card-text-center  text-danger h4 ">6.dumbbell biceps curls(underhand grip concentrtion with single arm)</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-   
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="contianer">
-                  <strong class="text-danger  text-danger h2">  triceps WorkOut</strong>
-                  <section id="viewtriceps"></section>
-                  <hr class="bg-danger">
-                  
-                  
-                  <div class="row">
-                    <div class="col-md-4">
-                      <div class="card mb-4 box-shadow" style="background-color:#181818ac;">
-                        <video controls >
-                          <source src="videos/try1.html" type="video/mp4">
-                         </video>
-                          <div class="card-body">
-                            <p class="card-text text-center  text-danger  h4">close-grip bench presses</p>
-                             <div class="d-flex justify-content-between align-items-center">
-                              <div class="btn-group">
-                             
-                            </div>
-                           
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="card mb-4 box-shadow" style="background-color:#181818ac;">
-                        <video controls >
-                          <source src="videos/try2.html" type="video/mp4">
-                         </video>
-                        <div class="card-body">
-                          <p class="card-text-center  text-danger h4 ">push-down</p>
-                          <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                             
-                            </div>
-                                                  </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="card mb-4 box-shadow" style="background-color:#181818ac;">
-                        <video controls >
-                          <source src="videos/try3.html" type="video/mp4">
-                         </video>
-                        <div class="card-body">
-                          <p class="card-text-center  text-danger h4">triceps dips</p>
-                          <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                            
-                            </div>
-                                                </div>
-                        </div>
-                      </div>
-                    </div>
-        
-                 </div>
-                 <div class="row">
-                  <div class="col-md-4">
-                    <div class="card mb-4 box-shadow" style="background-color:#181818ac;">
-                      <video controls >
-                        <source src="videos/try4.html" type="video/mp4">
-                       </video>
-                        <div class="card-body">
-                          <p class="card-text text-center  text-danger  h4">triiceps extensions</p>
-                           <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="card mb-4 box-shadow" style="background-color:#181818ac;">
-                      <video controls >
-                        <source src="videos/try5.html" type="video/mp4">
-                       </video>
-                      <div class="card-body">
-                        <p class="card-text-center  text-danger h4 ">triceps kickbacks</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                          <div class="btn-group">
-                           
-                          </div>
-                                                </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="card mb-4 box-shadow" style="background-color:#181818ac;">
-                      <video controls >
-                        <source src="videos/try6.html" type="video/mp4">
-                       </video>
-                      <div class="card-body">
-                        <p class="card-text-center  text-danger h4 ">one-arm dumbbell tricep extentions</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                          <div class="btn-group">
-     
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-    
-                  <div class="contianer">
-                    <strong class="text-danger h2">  chest WorkOut</strong>
-                    <section id="viewchest"></section>
-                    <hr class="bg-danger">
-                    <div class="row">
-                      <div class="col-md-4">
-                        <div class="card mb-4 box-shadow" style="background-color:#181818ac;">
-                          <video controls >
-                            <source src="videos/chest1.html" type="video/mp4">
-                           </video>
-                            <div class="card-body">
-                              <p class="card-text text-center  text-danger  h4"> bench presses</p>
-                               <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                               
-                              </div>
-                             
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-4">
-                        <div class="card mb-4 box-shadow" style="background-color:#181818ac;">
-                          <video controls >
-                            <source src="videos/chest2.html" type="video/mp4">
-                           </video>
-                          <div class="card-body">
-                            <p class="card-text-center  text-danger h4 ">inline presses</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                              <div class="btn-group">
-                               
-                              </div>
-                                                    </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-4">
-                        <div class="card mb-4 box-shadow" style="background-color:#181818ac;">
-                          <video controls >
-                            <source src="videos/chest3.html" type="video/mp4">
-                           </video>
-                          <div class="card-body">
-                            <p class="card-text-center  text-danger h4">inline dumbbell presses</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                              <div class="btn-group">
-                              
-                              </div>
-                                                  </div>
-                          </div>
-                        </div>
-                      </div>
+        <div class="col-md-4">
+          <!-- Video 4: Concentration Curls -->
+          <div class="card mb-4 box-shadow" style="background-color:#181818ac;box-shadow: 5px 10px 8px #000000;">
+            <div class="embed-responsive embed-responsive-16by9">
+              <video class="embed-responsive-item responsive-video" controls>
+                <source src="videos/by4.html" type="video/mp4">
+              </video>
+            </div>
+            <div class="card-body">
+              <p class="card-text text-center text-danger h4">Dumbbell Biceps Curls</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <!-- Video 5: Concentration Curls -->
+          <div class="card mb-4 box-shadow" style="background-color:#181818ac;box-shadow: 5px 10px 8px #000000;">
+            <div class="embed-responsive embed-responsive-16by9">
+              <video class="embed-responsive-item responsive-video" controls>
+                <source src="videos/by5.html" type="video/mp4">
+              </video>
+            </div>
+            <div class="card-body">
+              <p class="card-text text-center text-danger h4">Underr hand grip Curls</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <!-- Video 6: Concentration Curls -->
+          <div class="card mb-4 box-shadow" style="background-color:#181818ac; box-shadow: 5px 10px 8px #000000;">
+            <div class="embed-responsive embed-responsive-16by9">
+              <video class="embed-responsive-item responsive-video" controls>
+                <source src="videos/by6.html" type="video/mp4">
+              </video>
+            </div>
+            <div class="card-body">
+              <p class="card-text text-center text-danger h4">Single arm grip Curls</p>
+            </div>
+          </div>
+        </div>
+        <!-- Add more workout sections following the same structure -->
+        <!-- Triceps Workout Section -->
+        <div class="col-md-12">
+          <strong class="text-danger h2 text-center">Triceps WorkOut</strong>
+          <section id="viewtriceps"></section>
+          <hr class="bg-danger">
+        </div>
+        <div class="col-md-4">
+          <!-- Video 1: Tricep Dips -->
+          <div class="card mb-4 box-shadow" style="background-color:#181818ac;box-shadow: 5px 10px 8px #000000;">
+            <div class="embed-responsive embed-responsive-16by9">
+              <video class="embed-responsive-item responsive-video" controls>
+                <source src="videos/try1.html" type="video/mp4">
+              </video>
+            </div>
+            <div class="card-body">
+              <p class="card-text text-center text-danger h4">Tricep Extention</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <!-- Video 2: Skull Crushers -->
+          <div class="card mb-4 box-shadow" style="background-color:#181818ac;box-shadow: 5px 10px 8px #000000;">
+            <div class="embed-responsive embed-responsive-16by9">
+              <video class="embed-responsive-item responsive-video" controls>
+                <source src="videos/try2.html" type="video/mp4">
+              </video>
+            </div>
+            <div class="card-body">
+              <p class="card-text text-center text-danger h4">Skull Crushers</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <!-- Video 3: Tricep Kickbacks -->
+          <div class="card mb-4 box-shadow" style="background-color:#181818ac;box-shadow: 5px 10px 8px #000000;">
+            <div class="embed-responsive embed-responsive-16by9">
+              <video class="embed-responsive-item responsive-video" controls>
+                <source src="videos/try3.html" type="video/mp4">
+              </video>
+            </div>
+            <div class="card-body">
+              <p class="card-text text-center text-danger h4">Tricep Dips</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <!-- Video 5: Tricep Kickbacks -->
+          <div class="card mb-4 box-shadow" style="background-color:#181818ac; box-shadow: 5px 10px 8px #000000;">
+            <div class="embed-responsive embed-responsive-16by9">
+              <video class="embed-responsive-item responsive-video" controls>
+                <source src="videos/try5.html" type="video/mp4">
+              </video>
+            </div>
+            <div class="card-body">
+              <p class="card-text text-center text-danger h4">Tricep Kickbacks</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <!-- Video 6: Tricep Kickbacks -->
+          <div class="card mb-4 box-shadow" style="background-color:#181818ac; box-shadow: 5px 10px 8px #000000;">
+            <div class="embed-responsive embed-responsive-16by9">
+              <video class="embed-responsive-item responsive-video" controls>
+                <source src="videos/try6.html" type="video/mp4">
+              </video>
+            </div>
+            <div class="card-body">
+              <p class="card-text text-center text-danger h4"> One-arm Tricep Extention</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <!-- Video 3: Tricep Kickbacks -->
+          <div class="card mb-4 box-shadow" style="background-color:#181818ac;box-shadow: 5px 10px 8px #000000;">
+            <div class="embed-responsive embed-responsive-16by9">
+              <video class="embed-responsive-item responsive-video" controls>
+                <source src="videos/try4.html" type="video/mp4">
+              </video>
+            </div>
+            <div class="card-body">
+              <p class="card-text text-center text-danger h4">Push Down</p>
+            </div>
+          </div>
+        </div>
+        <!-- Add more workout sections following the same structure -->
+        <!-- Leg Workout Section -->
+        <div class="col-md-12">
+          <strong class="text-danger h2 text-center">Leg WorkOut</strong>
+          <section id="viewlegs"></section>
+          <hr class="bg-danger">
+        </div>
+        <div class="col-md-4">
+          <!-- Video 1: Squats -->
+          <div class="card mb-4 box-shadow" style="background-color:#181818ac; box-shadow: 5px 10px 8px #000000;">
+            <div class="embed-responsive embed-responsive-16by9">
+              <video class="embed-responsive-item responsive-video" controls>
+                <source src="videos/legs1.html" type="video/mp4">
+              </video>
+            </div>
+            <div class="card-body">
+              <p class="card-text text-center text-danger h4">Squats</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <!-- Video 2: Lunges -->
+          <div class="card mb-4 box-shadow" style="background-color:#181818ac;box-shadow: 5px 10px 8px #000000;">
+            <div class="embed-responsive embed-responsive-16by9">
+              <video class="embed-responsive-item responsive-video" controls>
+                <source src="videos/legs2.html" type="video/mp4">
+              </video>
+            </div>
+            <div class="card-body">
+              <p class="card-text text-center text-danger h4">Lunges</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <!-- Video 3: Deadlifts -->
+          <div class="card mb-4 box-shadow" style="background-color:#181818ac;box-shadow: 5px 10px 8px #000000;">
+            <div class="embed-responsive embed-responsive-16by9">
+              <video class="embed-responsive-item responsive-video" controls>
+                <source src="videos/legs3.html" type="video/mp4">
+              </video>
+            </div>
+            <div class="card-body">
+              <p class="card-text text-center text-danger h4">Deadlifts</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <!-- Video 4: Squats -->
+          <div class="card mb-4 box-shadow" style="background-color:#181818ac; box-shadow: 5px 10px 8px #000000;">
+            <div class="embed-responsive embed-responsive-16by9">
+              <video class="embed-responsive-item responsive-video" controls>
+                <source src="videos/legs4.html" type="video/mp4">
+              </video>
+            </div>
+            <div class="card-body">
+              <p class="card-text text-center text-danger h4">Dumbbell Lunges</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <!-- Video 5: Squats -->
+          <div class="card mb-4 box-shadow" style="background-color:#181818ac;box-shadow: 5px 10px 8px #000000;">
+            <div class="embed-responsive embed-responsive-16by9">
+              <video class="embed-responsive-item responsive-video" controls>
+                <source src="videos/legs5.html" type="video/mp4">
+              </video>
+            </div>
+            <div class="card-body">
+              <p class="card-text text-center text-danger h4"> Dumbbell Squats</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
           
-                   </div>
-                   <div class="row">
-                    <div class="col-md-4">
-                      <div class="card mb-4 box-shadow" style="background-color:#181818ac;">
-                        <video controls >
-                          <source src="videos/chest4.html" type="video/mp4">
-                         </video>
-                        <div class="card-body">
-                            <p class="card-text text-center  text-danger  h4"> dumbbell flys</p>
-                             <div class="d-flex justify-content-between align-items-center">
-                              <div class="btn-group">
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="card mb-4 box-shadow" style="background-color:#181818ac;">
-                        <video controls >
-                          <source src="videos/chest5.html" type="video/mp4">
-                         </video>
-                        <div class="card-body">
-                          <p class="card-text-center  text-danger h4 ">dumbbell pullovers</p>
-                          <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                             
-                            </div>
-                                                  </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="card mb-4 box-shadow" style="background-color:#181818ac;">
-                        <video controls >
-                          <source src="videos/chest6.html" type="video/mp4">
-                         </video>
-                        <div class="card-body">
-                          <p class="card-text-center  text-danger h4 ">push-ups</p>
-                          <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-       
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-    
-
-                    <div class="contianer">
-                      <strong class="text-danger h2">  legs WorkOut</strong>
-                      <section id="viewlegs"></section>
-                      <hr class="bg-danger">
-
-                      <div class="row">
-                        <div class="col-md-4">
-                          <div class="card mb-4 box-shadow" style="background-color:#181818ac;">
-                            <video controls >
-                              <source src="videos/legs1.html" type="video/mp4">
-                               </video>                
-                                <div class="card-body">
-                                 <p class="card-text text-center  text-danger  h4">angled leg presses</p>
-                                 <div class="d-flex justify-content-between align-items-center">
-                                  <div class="btn-group">
-                                 
-                                </div>
-                               
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-4">
-                          <div class="card mb-4 box-shadow" style="background-color:#181818ac;">
-                            <video controls >
-                              <source src="videos/legs2.html" type="video/mp4">
-                               </video>   
-                            <div class="card-body">
-                              <p class="card-text-center  text-danger h4 ">leg extensions</p>
-                              <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                 
-                                </div>
-                                                      </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-4">
-                          <div class="card mb-4 box-shadow" style="background-color:#181818ac;">
-                            <video controls >
-                              <source src="videos/legs3.html" type="video/mp4">
-                               </video>   
-                            <div class="card-body">
-                              <p class="card-text-center  text-danger h4">squats</p>
-                              <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                
-                                </div>
-                                                    </div>
-                            </div>
-                          </div>
-                        </div>
-            
-                     </div>
-                     <div class="row">
-                      <div class="col-md-4">
-                        <div class="card mb-4 box-shadow" style="background-color:#181818ac;">
-                          <video controls >
-                            <source src="videos/legs4.html" type="video/mp4">
-                             </video> 
-                            <div class="card-body">
-                              <p class="card-text text-center  text-danger  h4">dumbbell lunges</p>
-                               <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-4">
-                        <div class="card mb-4 box-shadow" style="background-color:#181818ac;">
-                          <video controls >
-                            <source src="videos/legs5.html" type="video/mp4">
-                             </video> 
-                          <div class="card-body">
-                            <p class="card-text-center  text-danger h4 ">dumbbell squats</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                              <div class="btn-group">
-                               
-                              </div>
-                                                    </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-4">
-                        <div class="card mb-4 box-shadow" style="background-color:#181818ac;">
-                          <video controls >
-                            <source src="videos/legs6.html" type="video/mp4">
-                             </video> 
-                          <div class="card-body">
-                            <p class="card-text-center  text-danger h4 ">feont squats</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                              <div class="btn-group">
-         
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+          <!-- Video 1: Squats -->
+          <div class="card mb-4 box-shadow" style="background-color:#181818ac;box-shadow: 5px 10px 8px #000000;">
+            <div class="embed-responsive embed-responsive-16by9">
+              <video class="embed-responsive-item responsive-video" controls>
+                <source src="videos/legs6.html" type="video/mp4">
+              </video>
+            </div>
+            <div class="card-body">
+              <p class="card-text text-center text-danger h4">Font Squats</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
-                      <div class="contianer">
-                        <strong class="text-danger h2">  shoulder WorkOut</strong>
-                        <section id="viewshoulder"></section>
-                        <hr class="bg-danger">
+    <footer>
+      <div class="">
+        <div class="row" style="justify-content: center;">
+          <div class="col-md-6 item text-center mt-5">
+            <img src="img/logo1.png" alt="brand-logo" width="70" height="70">
+            <h3><strong class="text-danger ">&nbsp; Fitness-<strong class="text-light">Hub </strong> </strong></h3>
+            <hr class=" text-mute bg-light ">
+            <p class="mb-1 "><i class="fa-solid fa-phone text-danger"></i>
+              <b class="text-light">84888 &nbsp; 33890</b>
+            </p>
+            <p class="mb-1">
+              <i class="fa-solid fa-envelope text-danger"></i>
+              <b class="text-light">FitnessHub@gamil.com</b>
+            </p>
+            <p class="mb-1">
+              <i class="fa-solid fa-location-dot text-danger"></i>
+              <b class="text-light"> Ahmedabad , 383001
+                <br> <b> Sarkhej-Tp85 Road </b>
 
-                        <div class="row">
-                          <div class="col-md-4">
-                            <div class="card mb-4 box-shadow" style="background-color:#181818ac;">
-                              <video controls >
-                                <source src="videos/sh1.html" type="video/mp4">
-                                 </video> 
-                                <div class="card-body">
-                                  <p class="card-text text-center  text-danger  h4">back-presses</p>
-                                   <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                   
-                                  </div>
-                                 
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="card mb-4 box-shadow" style="background-color:#181818ac;">
-                              <video controls >
-                                <source src="videos/sh2.html" type="video/mp4">
-                                 </video> 
-                              <div class="card-body">
-                                <p class="card-text-center  text-danger h4 ">seated dumbbell presses</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                  <div class="btn-group">
-                                   
-                                  </div>
-                                                        </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="card mb-4 box-shadow" style="background-color:#181818ac;">
-                              <video controls >
-                                <source src="videos/sh3.html" type="video/mp4">
-                                 </video> 
-                              <div class="card-body">
-                                <p class="card-text-center  text-danger h4">low-pulley lateral raises </p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                  <div class="btn-group">
-                                  
-                                  </div>
-                                                      </div>
-                              </div>
-                            </div>
-                          </div>
-              
-                       </div>
-                       <div class="row">
-                        <div class="col-md-4">
-                          <div class="card mb-4 box-shadow" style="background-color:#181818ac;">
-                            <video controls >
-                              <source src="videos/sh4.html" type="video/mp4">
-                               </video> 
-                              <div class="card-body">
-                                <p class="card-text text-center  text-danger  h4">upright rows</p>
-                                 <div class="d-flex justify-content-between align-items-center">
-                                  <div class="btn-group">
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-4">
-                          <div class="card mb-4 box-shadow" style="background-color:#181818ac;">
-                            <video controls >
-                              <source src="videos/sh5.html" type="video/mp4">
-                               </video> 
-                            <div class="card-body">
-                              <p class="card-text-center  text-danger h4 ">dumbbell rear deltoid raises</p>
-                              <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                 
-                                </div>
-                                                      </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-4">
-                          <div class="card mb-4 box-shadow" style="background-color:#181818ac;">
-                            <video controls >
-                              <source src="videos/sh6.html" type="video/mp4">
-                               </video> 
-                            <div class="card-body">
-                              <p class="card-text-center  text-danger h4 ">front raises</p>
-                              <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-           
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                    
-                        <div class="contianer">
-                          <strong class="text-danger h2">  abs WorkOut</strong>
-                          <section id="viewabs"></section>
-                          <hr class="bg-danger">
-    
-                          <div class="row">
-                            <div class="col-md-4">
-                              <div class="card mb-4 box-shadow" style="background-color:#181818ac;">
-                                <video controls >
-                                  <source src="videos/abs 6.html" type="video/mp4">
-                                 </video>
-                                <div class="card-body">
-                                    <p class="card-text text-center  text-danger  h4">seated jacknife</p>
-                                     <div class="d-flex justify-content-between align-items-center">
-                                      <div class="btn-group">
-                                     
-                                    </div>
-                                   
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-md-4">
-                              <div class="card mb-4 box-shadow" style="background-color:#181818ac;">
-                                <video controls >
-                                  <source src="videos/abs 5.html" type="video/mp4">
-                                 </video>
-                                <div class="card-body">
-                                  <p class="card-text-center  text-danger h4 ">flat bench lying leg raise</p>
-                                  <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                     
-                                    </div>
-                                                          </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-md-4">
-                              <div class="card mb-4 box-shadow" style="background-color:#181818ac;">
-                                <video controls >
-                                  <source src="videos/abs 4.html" type="video/mp4">
-                                 </video>
-                                <div class="card-body">
-                                  <p class="card-text-center  text-danger h4">leg raises</p>
-                                  <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                    
-                                    </div>
-                                                        </div>
-                                </div>
-                              </div>
-                            </div>
-               
-                         </div>
-                         <div class="row">
-                          <div class="col-md-4">
-                            <div class="card mb-4 box-shadow" style="background-color:#181818ac;">
-                              <video controls >
-                                <source src="videos/abs 3.html" type="video/mp4">
-                               </video>
-                              <div class="card-body">
-                                  <p class="card-text text-center  text-danger  h4">sit-ups</p>
-                                   <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="card mb-4 box-shadow" style="background-color:#181818ac;">
-                              <video controls >
-                                <source src="videos/abs 2.html" type="video/mp4">
-                               </video>
-                              <div class="card-body">
-                                <p class="card-text-center  text-danger h4 ">crunches</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                  <div class="btn-group">
-                                   
-                                  </div>
-                                                        </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="card mb-4 box-shadow" style="background-color:#181818ac;">
-                             <video controls >
-                              <source src="videos/abs 1.html" type="video/mp4">
-                             </video>
-                              <div class="card-body">
-                                <p class="card-text-center  text-danger h4 ">dumbbell side  bends</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                  <div class="btn-group">
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <a id="back-to-top" href="#" class="btn btn-dark btn-lg back-to-top" 
-role="button">
- <i class="fas fa-chevron-up text-danger"></i></a>
- 
-                       
-                          <!-- ================Scroll Back To Top Button Start================
-<a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" 
-role="button">
- <i class="fas fa-chevron-up"></i></a>
-<script>
-$(document).ready(function(){
-$(window).scroll(function () {
-if ($(this).scrollTop() > 50) {
-$('#back-to-top').fadeIn();
-} else {
-$('#back-to-top').fadeOut();
-}
-});
-// scroll body to 0px on click
-$('#back-to-top').click(function () {
-$('body,html').animate({
-scrollTop: 0
-}, 400);
-return false;
-});
-});
-</script> -->
-<!--================Scroll Back To Top Button End================-->
-<!-- <style>
-/* scroll top */
- .back-to-top {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    display: none;
-    background-color: #1e656f6e;
-    border: none;
-    scroll-behavior: smooth;
-} 
-/* scroll top */
-</style>                    -->
-                </body>
-           
+              </b>
+            </p>
+            <p class=" copyright text-light ">2023 © Fitness-hub</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!-- Back to top button -->
+  <button class="back-to-top bg-danger text-white" style="border-radius: 10px;box-shadow: 4px 4px 5px #606060;"
+    title="Go to top"><i class="fas fa-chevron-up"></i></button>
+
+  <!-- Optional: Add your JavaScript code here if needed -->
+  <script>
+    // Select the button element
+    const backToTopButton = document.querySelector('.back-to-top');
+
+    // Add a click event listener to the button
+    backToTopButton.addEventListener('click', () => {
+      // Scroll to the top of the page smoothly
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  </script>
+</body>
+
 </html>
